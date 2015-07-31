@@ -126,6 +126,7 @@ class Example extends A {
         $data['fengmian']   = $fengmian;
         $data['anli']       = $anli;
 
+
         $this->db->where('id', $id)->update('example', $data);
         if ( $this->db->affected_rows() ) {
             JSON('success', '修改成功!');
