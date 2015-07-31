@@ -188,7 +188,6 @@ class Upload extends C {
     public function exampleimage() {
 
         if ( isset($_FILES['attach']) AND is_uploaded_file($_FILES['attach']['tmp_name']) AND ($_FILES['attach']['error'] === 0) ) {
-
             $imgsize = $_FILES['attach']['size'];
             $maxsize = config_item('site_image_maxsize');
             if ( $imgsize > ($maxsize * 1024 * 1024) ) {
@@ -207,6 +206,7 @@ class Upload extends C {
 
             $filename = date('dis') . rand(1000, 9999) . '.' . strtolower($imginfo['extension']);
             $fullname = $savepath . $filename;
+
 
             move_upload_file($_FILES['attach']['tmp_name'], $fullname);
 

@@ -12,10 +12,11 @@ img {vertical-align:bottom;}
 .superbox_list2{}
 .wrapper_content{height: 100%;}
 .superbox ul{width: 100%;height: 100%;padding: 0;margin: 0; }
-.case_mark{position: absolute;left: -0.5px;top: -0.5px;width: 192px;height: 192px; background: #EF4C4C;color: #fff; z-index: 2;opacity: 0;}
+.case_mark{position: absolute;left: -0.5px;top: -0.5px;width: 191px;height: 192px; background: #EF4C4C;color: #fff; z-index: 2;opacity: 0;}
 .case_mark span{display: block;width: 100%;text-align: center;line-height: 30px;padding: 56px 0 0 0 ;}
 .case_mark span:nth-child(2){font-size: 12px;padding: 0;}
-.superbox-list {float:left;width:20%;position: relative;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;border: 1px solid #e9e9e9;border-bottom: 0px solid #e9e9e9;}
+.superbox-list {float:left;width:20%;position: relative;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;border-left: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;}
 
 .superbox-img {cursor:pointer;height: 192px;width: 192px;}
 .superbox-show {position:absolute;left:0;top: 484px;width:100%;float:left;border:1px solid #c7c7c7;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;height: 0px;background: #ff6666;z-index: 5;display: none;box-shadow: 0px 10px 10px #ff2222 inset;}
@@ -67,3 +68,4 @@ img {vertical-align:bottom;}
 .superbox-close {opacity:1;position:absolute;top:0px;right:0px;font-size:14px;width:60px;height:20px;color: #fff;cursor:pointer;}
 .superbox-close i{display: inline-block; width:10px;height:10px;background: url(../images/bg_close.png);background-size: 100% 100%;margin-left: 5px;}
 .superbox-close:hover {opacity:0.7;}
+#footer {position: fixed;bottom: 0;}

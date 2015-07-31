@@ -1,5 +1,10 @@
 $(function(){
     var l = $(".superbox_lists").length;
+    if(l>1){
+        $(".control").show()
+    }else{
+        $(".control").hide()
+    }
     l = l*100;
     var W = 100/l*100;
     var length = $(".superbox-list").length;
@@ -148,14 +153,13 @@ $(function(){
         if(window.num > len){
             window.num = 1;
         }
-        console.log(window.num)
         $(".page span:nth-child(1)").html(window.num);
         setTimeout(autoplay(),3000);
     }
     function autoplay(){
         window.t = setInterval(function(){
             next();
-        },3000);
+        },2000);
     }
     function nextpage(){
         var no = $(".show_imgs").data("num");
@@ -177,7 +181,7 @@ $(function(){
         var page = parseInt(no/20+1)
         var i = parseInt(no/10);
         if(i>0){
-            i = parseInt((i%2==0)?2:1)
+            i = parseInt((i%2==0)?1:2)
         }else{
             i = 1;
         }
@@ -192,6 +196,7 @@ $(function(){
                 var imgData = response['data']['anli'];
                 var imgLen = imgData.length;
                 var str = "<li><img src=''/></li>";
+                $(".show_imgs ul").html('')
                 for (var i = 1; i <= imgLen; i++) {
                     $(".show_imgs ul").append(str);
                     $(".show_imgs ul li:nth-child("+i+") img").attr('src','/'+imgData[i-1]);

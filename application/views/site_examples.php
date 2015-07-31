@@ -52,14 +52,14 @@
 			<div class="superbox_lists" data-page="<?php echo $i + 1;?>">
 				<div class="superbox superbox1">
 					<ul>
-					<?php for( $i = 0; $i < 10; $i++ ) :?>
-						<?php if( isset($list[$i + $p * 20]) ):?>
+					<?php for( $i = $p * 20; $i < 10 + $p * 20; $i++ ) :?>
+						<?php if( isset($list[$i]) ):?>
 						<li class="superbox-list">
 							<a href="javascript:void(0);">
-								<img src="<?php echo base_url($list[$i + $p * 20]->fengmian);?>" data-num="<?php echo $list[$i + $p * 20]->id;?>" data-no="<?php echo $i+$p*20+1;?>" data-img="<?php echo base_url($list[$i + $p * 20]->fengmian);?>" class="superbox-img">
+								<img src="<?php echo base_url($list[$i]->fengmian);?>" data-num="<?php echo $list[$i]->id;?>" data-no="<?php echo $i+1;?>"  class="superbox-img">
 								<div class="case_mark">
-									<span><?php echo $list[$i + $p * 20]->name;?></span>
-									<span><?php echo implode('·', $list[$i + $p * 20]->tag);?></span>
+									<span><?php echo $list[$i]->name;?></span>
+									<span><?php echo implode('·', $list[$i]->tag);?></span>
 								</div>
 							</a>
 						</li>
@@ -69,14 +69,14 @@
 				</div>
 				<div class="superbox superbox2">
 					<ul>
-						<?php for( $i = 10; $i < 20; $i++ ):?>
-							<?php if( isset($list[$i + $p * 20]) ):?>
+						<?php for( $i = 10 + $p * 20; $i < $p * 20 + 20; $i++ ):?>
+							<?php if( isset($list[$i]) ):?>
 							<li class="superbox-list">
 								<a href="javascript:void(0);">
-									<img src="<?php echo base_url($list[$i +10+ $p * 20]->fengmian);?>" data-num="<?php echo $list[$i + $p * 20]->id;?>" data-no="<?php echo $i+10+$p*20+1;?>" data-img="<?php echo base_url($list[$i + $p * 20]->fengmian);?>" class="superbox-img">
+									<img src="<?php echo base_url($list[$i]->fengmian);?>" data-num="<?php echo $list[$i]->id;?>" data-no="<?php echo $i+1;?>"  class="superbox-img">
 									<div class="case_mark">
-										<span><?php echo $list[$i + $p * 20]->name;?></span>
-										<span><?php echo implode('·', $list[$i + $p * 20]->tag);?></span>
+										<span><?php echo $list[$i]->name;?></span>
+										<span><?php echo implode('·', $list[$i]->tag);?></span>
 									</div>
 								</a>
 							</li>
