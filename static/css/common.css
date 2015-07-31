@@ -1,0 +1,131 @@
+body, ul, ol, dl, dt, dd, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, caption, th, td, img, div{margin:0; padding:0; border:0}
+html, body{color:#000; font:12px 'Microsoft YaHei', Verdana, Arial, Tahoma; background:#EEE url('../images/bg.png')}
+address, caption, cite, code, pre, em, var, u, i {font-weight:normal; font-style:normal}
+select, img, label, input, textarea{font:12px 'Microsoft YaHei'; vertical-align:middle; margin:0; padding:0}
+select{font:13px 'Microsoft YaHei'; height:24px; line-height:18px; border:1px solid #C0C0C0; padding:2px}
+ul{list-style-type:none; border:none}
+a{color:#000; text-decoration:none}
+a:hover{color:#0099FF}
+
+.clearfix:after{font-size:0; height:0; visibility:hidden; display:block; content:' '; clear:both}
+.clearfix{display:inline-table; height:1%}
+.clearfix{display:block}
+.hand{cursor:pointer}
+.hide{display:none}
+.fl{float:left}
+.fr{float:right}
+.d6{color:#D60000}
+
+.border-dotted-top{background:url('../images/border-h.gif') repeat-x left top}
+.border-dotted-btm{background:url('../images/border-h.gif') repeat-x left bottom}
+
+#head{width:960px; height:62px; margin:15px auto}
+#head #logo{float:left}
+#head #logo h1{font-size:38px; line-height:38px; margin-bottom:10px; text-shadow:1px 1px 0 #FFF}
+#head #logo h5{color:#666; font-size:12px; line-height:14px; font-weight:normal; text-shadow:1px 1px 0 #FFF}
+#head #top{float:right}
+#head #top .banner{width:468px; height:60px; background:#FFF}
+
+#menu{height:38px; background:#666; margin:0 auto 15px auto; box-shadow:0 2px 3px #555}
+#menu ul{width:960px; margin:0 auto}
+#menu ul li{float:left}
+#menu ul li a{color:#F9F9F9; font-size:16px; font-weight:bold; height:38px; line-height:38px; border-left:1px solid #888; border-right:1px solid #333; padding:0 15px; float:left; display:block; text-shadow:1px 1px 0px #333; border-radius:0}
+#menu ul li a:hover{background:#555}
+#menu ul li .menu-item-index{border-left:none}
+#menu ul li .last{border-right:none}
+#menu ul li .curr{background:#555}
+#menu ul .search{float:right}
+#menu ul .search #sput{font-size:12px; width:214px; height:22px; line-height:22px; border:none; margin:8px 0 0 0; padding:0 3px}
+#menu ul .search #sbtn{font-size:12px; width:50px; height:22px; border:none; background:#DDD; margin:8px 0 0 0; padding:0; cursor:pointer; text-shadow:1px 1px 0 #FFF}
+#menu ul .search #sbtn:hover{background:#CCC}
+
+#wrap{width:960px; border:1px solid #CCC; background:#F6F6F6; margin:0 auto 15px auto; box-shadow:2px 2px 3px #888}
+
+#content{width:660px; background:#FFF; padding:15px; float:left}
+
+#content .tips{background:#FFFAAC; margin-bottom:15px; padding:6px 10px; text-shadow:1px 1px 0 #FFF}
+
+#content .null{font-size:14px; text-align:center; margin:25px}
+#content .null a{color:#0099FF}
+#content .null a:hover{color:#D60000}
+
+#content #switch{ height:285px; border:1px solid #CCC; background:#F6F6F6; margin-bottom:18px; padding:1px; box-shadow:1px 1px 1px #CCC; display: }
+#content #switch:hover{border:1px solid #666; box-shadow:1px 1px 1px #666}
+#content #switch h1{ color:#FFF; font-size:20px; line-height:50px; height:50px; background:#000; text-align:center; padding:0 10px; opacity:0.8; position:relative; left:0; top:-50px; z-index:99; }
+#content #switch img{ width:656px; }
+
+#content .list li{background:url('../images/border-h.gif') repeat-x left bottom; margin-bottom:15px; padding-bottom:10px}
+#content .list li .pic{width:160px}
+#content .list li .pic img{width:156px; height:116px; border:1px solid #CCC; background:#FFF; padding:1px; box-shadow:1px 1px 1px #CCC}
+#content .list li .pic img:hover{border:1px solid #666; box-shadow:1px 1px 1px #666}
+
+#content .list li .article{width:480px}
+#content .list li .article .title{font-size:20px; height:22px; line-height:20px; overflow:hidden; margin-bottom:12px}
+#content .list li .article .info{color:#666; height:22px; line-height:20px; margin-top:5px}
+#content .list li .article .info .fl{line-height:22px}
+#content .list li .article .info .fl a{color:#0099FF}
+#content .list li .article .info .fl a:hover{color:#D60000}
+#content .list li .article .info .fr a{color:#F6F6F6; border:1px solid #4C7BCF; background:#4271C9 url('../images/blue.png') repeat-x left top; padding:1px 8px; text-shadow:1px 1px 0 #4C7BCF; cursor:pointer; border-radius:2px}
+#content .list li .article .info .fr a:hover{color:#FFF; border:1px solid #2E4F8C}
+#content .list li .article .description{font-size:12px; font-weight:normal; line-height:22px}
+
+#content .tag li{height:28px; padding:0 5px 10px 5px}
+#content .tag li .name{background:url('../images/tag.png') no-repeat left center; padding-left:25px}
+#content .tag li .name h1{font-size:20px; line-height:20px;}
+
+#content #view{margin:0 12px}
+#content #view #info{background:url('../images/border-h.gif') repeat-x left bottom; text-align:center; padding-bottom:15px}
+#content #view #info h1{font-size:20px; line-height:24px;}
+#content #view #info p{color:#666; margin-top:15px}
+#content #view #info p em{margin:0 3px}
+#content #view #text{font-size:14px}
+#content #view #text a{color:#0099FF}
+#content #view #text a:hover{color:#D60000}
+#content #view #text p{line-height:26px; margin:15px 0}
+#content #view #text li{margin-left:48px}
+#content #view #text li p{font-size:12px; line-height:20px; margin:8px 0; }
+
+#content .ds-thread .ds-powered-by{display:none}
+
+#page{height:24px; line-height:24px}
+#page .fl .input-item-button{margin:-3px 5px 0 5px}
+#page .fr a{color:#666; border:1px solid #DDD; text-shadow:1px 1px 0px #FFF; box-shadow:1px 1px 0px #F9F9F9; background:#EEE url('../images/grey.png') repeat-x left top; margin-left:5px; padding:3px 8px; border-radius:2px}
+#page .fr a:hover{color:#444; border:1px solid #888}
+#page .fr strong{color:#F6F6F6; font-weight:normal; border:1px solid #4C7BCF; background:#4271C9 url('../images/blue.png') repeat-x left top; text-shadow:1px 1px 0px #4C7BCF; box-shadow:1px 1px 0px #EEE; margin-left:5px; padding:3px 8px; border-radius:2px}
+#page .fr strong:hover{color:#FFF; border:1px solid #2E4F8C; cursor:default}
+#page .fr span{color:#666; border:1px solid #DDD; background:#F9F9F9 url('../images/grey.png') repeat-x left top; padding:3px 8px; border-radius:2px; text-shadow:1px 1px 0 #FFF; cursor:default}
+
+#sidebar{width:240px; padding:15px 15px 15px 12px; float:right}
+
+#sidebar .list{border-top:1px solid #FFF; border-bottom:1px solid #DDD; padding:15px 0 10px 0}
+#sidebar .list:first-child{border-top:none; padding:0 0 15px 0;}
+#sidebar .list:last-child{border-bottom:none}
+#sidebar .list dt h3{font-size:16px; height:22px; line-height:20px; margin-bottom:12px; text-shadow:1px 1px 0px #FFF}
+#sidebar .list dd{background:url('../images/li.gif') no-repeat left 7px; margin:6px 0; padding-left:13px}
+#sidebar .list dd a{line-height:16px; text-shadow:1px 1px 0px #FFF}
+#sidebar .list dd a:hover{color:#FFF; background:#0099FF; text-shadow:1px 1px 0px #0033FF}
+#sidebar .list .contect{ font-size:32px; height:60px; line-height:60px; background:#FF9900; text-align:center; }
+#sidebar .list .contect a{ color:#FFF; }
+#sidebar .ds-recent-comments{padding:5px 0 15px 0}
+#sidebar .ds-recent-comments .ds-meta{margin:-2px 0 3px 0}
+#sidebar .ds-recent-comments .ds-show-avatars{border:none}
+#sidebar .rank dd{background:none; padding-left:0}
+#sidebar .rank dd em, #sidebar .rank dd a{color:#999; font-size:13px; margin-right:7px; text-shadow:1px 1px 0px #FFF}
+#sidebar .rank .rank-item-1 em, #sidebar .rank .rank-item-1 a{color:#FF1100}
+#sidebar .rank .rank-item-2 em, #sidebar .rank .rank-item-2 a{color:#FF2200}
+#sidebar .rank .rank-item-3 em, #sidebar .rank .rank-item-3 a{color:#FF3300}
+#sidebar .rank .rank-item-4 em, #sidebar .rank .rank-item-4 a{color:#FF4400}
+#sidebar .rank .rank-item-5 em, #sidebar .rank .rank-item-5 a{color:#FF5500}
+#sidebar .rank .rank-item-6 em, #sidebar .rank .rank-item-6 a{color:#FF6600}
+#sidebar .rank .rank-item-7 em, #sidebar .rank .rank-item-7 a{color:#FF7700}
+#sidebar .rank .rank-item-8 em, #sidebar .rank .rank-item-8 a{color:#FF8800}
+#sidebar .tags dd{background:none; padding-left:0}
+#sidebar .tags dd a{line-height:29px; border-right:1px solid #666; border-bottom:1px solid #666; background:#DDD; margin-right:1px; padding:3px 5px; white-space:nowrap}
+#sidebar .tags dd a:hover{border-right:1px solid #0033FF; border-bottom:1px solid #0033FF}
+#sidebar .g{padding-bottom:15px}
+#sidebar .g img{box-shadow:1px 1px 1px #CCC}
+#sidebar .g img:hover{box-shadow:1px 1px 1px #666}
+#sidebar .f{border-top:none; margin-top:0; padding-top:0}
+
+#foot{color:#666; width:960px; height:20px; margin:0 auto 10px auto; text-shadow:1px 1px 0px #FFF}
+#foot a{text-shadow:1px 1px 0px #FFF}

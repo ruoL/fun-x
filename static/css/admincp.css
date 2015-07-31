@@ -1,0 +1,229 @@
+@charset "utf-8";
+/*******************************
+ * @Author:zhangting[http://www.fun-x.cn/]
+ * @Creation date:2014.7.07
+ *******************************/
+body, ul, ol, dl, dt, dd, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, caption, th, td, img, div{margin:0; padding:0; border:0}
+html, body{color:#000; font:12px 'Microsoft YaHei', Verdana, Arial, Tahoma; height:100%; background:#FFF}
+address, caption, cite, code, pre, em, var, u, i {font-weight:normal; font-style:normal}
+select, img, label, input, textarea{font:12px 'Microsoft YaHei'; vertical-align:middle; margin:0; padding:0}
+select{font:12px 'Microsoft YaHei'; height:24px; line-height:18px; border:1px solid #CCC; padding:2px; border-radius:2px}
+label{cursor:pointer}
+ul{list-style-type:none; border:none}
+a{color:#4271C9; text-decoration:none}
+a:hover{color:#D60000}
+.hide {display: none;}
+
+.clearfix:after{font-size:0; height:0; visibility:hidden; display:block; content:' '; clear:both}
+.clearfix{display:inline-table; height:1%}
+.clearfix{display:block}
+.hand{cursor:pointer}
+.hide{display:none}
+.fl{float:left}
+.fr{float:right}
+#w{width:100%;overflow: hidden;}
+
+#side{background-color: #f2f0f1;float: left;padding: 0px;margin: 0px;height: 100%;}
+.admin_logo {background: url('../images/admin_logo.png') center no-repeat;height: 80px;width: 100%;background-color: #fe4444}
+#side .sub-menu .badge {background-color: #ff3333;margin-top: 13px;position: absolute;margin-left: 10px;}
+#side .menu-list .menu_head .fa{margin: 0 40px 0 20px;}
+.menu-list a{display:block;font-size: 18px;color: #666666;text-decoration: none;
+	line-height: 70px;width: 100%;height:70px;border-bottom: 1px solid #666666;
+	text-align: center;
+	}
+.menu-list .fa {margin: 0 10px 0 0px;}
+.menu-list a:hover{color: #ff3333;}
+.menu-list-curr{color: #ff3333;}
+.sub-menu{display: none;background-color: #666666;}
+.sub-menu ul{list-style:none;text-align: right;padding-right: 90px;}
+.sub-menu a{font-size: 15px;color:#f2f0f1;line-height: 40px;height: 40px;border-bottom: 1px solid #cccccc;}
+.sub-menu a:hover{background-color: #999999;color: #ffffff;}
+.sub-menu-curr a{background-color: #999999;color: #ffffff;}
+.menu-list-curr ul{display: block;}
+
+
+#main{vertical-align:top; background:#FFF; padding: 0px;margin: 0px;}
+#main #here{height:24px; border-bottom:1px solid #DDD; margin-bottom:15px; padding-bottom:8px; box-shadow:0 1px 0 #F8F8F8}
+#main #here .tit{font-size:16px; line-height:20px; text-shadow:1px 1px 0 #FEFEFE}
+
+#main{width: 1185px;float: left;}
+#main .main_top{height: 80px;background-color: #f2f0f1;}
+#main .main_top .nav-tabs{list-style: none;padding-top: 40px;float: right;}
+#main .main_top .nav a {margin-right: 2px;padding: 10px 35px;}
+#main .main_top .nav a:hover{background-color: #ffffff;}
+#main .main_top .opt{padding-right: 500px;margin-top: -30px;}
+
+#main .main_text .tit {font-size: 16px;line-height: 20px;text-shadow: 1px 1px 0 #FEFEFE;}
+#main .main_text>.panel{border-radius: 0;border-color: #666666;margin-top: 53px; }
+#main .main_text .panel-default>.panel-heading{color: #e7e7e7;background-color: #999999;border-color: #666666;border-top-right-radius:0;
+    border-top-left-radius:0;padding: 10px 30px;}
+#main .main_text .panel-default .list-group-item{font-size:14px;padding: 10px 28px;letter-spacing: 0.6px;}
+
+/** input submit normal style */
+.input-item-submit{color:#F6F6F6; border:1px solid #4C7BCF; height:25px; background:#4271C9 url('../images/blue.png') repeat-x left top; padding:0 8px; text-shadow:1px 1px 0 #4C7BCF; cursor:pointer; border-radius:2px}
+.input-item-submit:hover{color:#FFF; border:1px solid #2E4F8C}
+
+/** input submit disabled style */
+.submit-disabled{color:#BCD0EC; border:1px solid #4C7BCF}
+.submit-disabled:hover{color:#BCD0EC; border:1px solid #4C7BCF; cursor:default}
+
+/** input button normal style */
+.input-item-button{color:#666; border:1px solid #DDD; height:26px; background:#EEE url('../images/grey.png') repeat-x left top; padding:0 8px; text-shadow:1px 1px 0 #FFF; cursor:pointer; border-radius:2px}
+.input-item-button:hover{color:#444; border:1px solid #999}
+
+/** input button disabled style */
+.button-disabled{color:#BCBCBC; border:1px solid #DDD}
+.button-disabled:hover{color:#BCBCBC; border:1px solid #DDD; cursor:default}
+
+/** input text normal style */
+.input-item-text{border:1px solid #CCC; padding:3px; text-shadow:1px 1px 0 #FFF; border-radius:2px}
+.input-item-text:hover{border:1px solid #999}
+.input-item-text:focus{border:1px solid #4271C9; outline:none}
+
+/** input text disabled style */
+.text-disabled{color:#888; background:#EEE; text-shadow:1px 1px 0 #FFF}
+.text-disabled:hover{color:#888; border:1px solid #DDD; background:#EEE}
+.text-disabled:focus{color:#888; border:1px solid #DDD; background:#EEE}
+
+/** border dotted style */
+.border-dotted-top{background:url('../images/border-h.gif') repeat-x left top}
+.border-dotted-btm{background:url('../images/border-h.gif') repeat-x left bottom}
+
+/** jquery select plugin */
+.dropdown{outline:none; display:inline-block; *display:inline}
+.dropdown h4{cursor:default; text-indent:5px; margin:0; padding:0}
+.dropdown *{-moz-user-select:none}
+.dropdown div{display:block}
+.dropdown ul{position:absolute; display:none; margin:0; padding:0; float:left; clear:both}
+.dropdown ul li{text-indent:5px; margin:0; padding:0; list-style:none; display:block; cursor:default}
+.dropselectbox{display:inline}
+/* write you style here */
+.dropselectbox{background:#EEE url('../images/grey.png') repeat-x left 1px}
+.dropdown h4{color:#666; font-size:12px; font-weight:normal; height:23px; border:1px solid #DDD; border-radius:2px; background:url('../images/droparrow.gif') no-repeat right center}
+.dropdown h4.over{color:#444; border:1px solid #999; background-image:url('../images/droparrowover.gif')}
+.dropdown h4.current{border:1px solid #999}
+.dropdown ul{border:1px solid #999; background:#FFF; padding:1px; border-radius:2px}
+.dropdown ul li{background:#FFF; height:23px; font-size:12px}
+.dropdown ul li.over{color:#FFF; background:#999; text-shadow:1px 1px 0 #666; border-radius:2px}
+
+.dropselectbox{line-height:24px}
+
+#wrap{height:100%; background:#CCC}
+
+#menu{vertical-align:top; border-right:1px solid #CCC; background:#EEE url('../images/bg.png'); padding:0 15px}
+#menu dl{text-align:right; margin-top:15px}
+#menu dl dt{font-size:16px; line-height:20px; margin-bottom:6px; text-shadow:1px 1px 0 #FFF}
+#menu dl dd{font-size:13px; line-height:24px; text-shadow:1px 1px 0 #FFF}
+#menu dl dd em{color:#D60000; margin-right:5px}
+#menu dl dd a{padding:0 3px 1px 3px; }
+#menu dl dd a:hover{color:#D60000; text-shadow:1px 1px 0 #FFF}
+#menu .curr{color:#FFF; background:#4271C9; text-shadow:1px 1px 0 #2E4F8C}
+#menu .curr:hover{color:#FFF; text-shadow:1px 1px 0 #2E4F8C}
+#menu .curr em{color:#FFF}
+#menu .last{margin-bottom:15px}
+
+#container{}
+
+.null{color:#666; text-align:center}
+
+.formtip{font-size:14px; margin:0 0 15px 0}
+.error{color:#d60000; background:#FFFAEC url(../images/error.gif) no-repeat 10px center; text-shadow:1px 1px 0px #FFF; padding:10px 10px 10px 45px}
+.success{color:green; background:#E6F4D0 url(../images/success.gif) no-repeat 10px center; text-shadow:1px 1px 0px #FFF; padding:10px 10px 10px 45px}
+
+.webmaster{width:100%; border:1px solid #DDD; border-bottom:none; margin-bottom:15px; box-shadow:1px 1px 0 #F8F8F8}
+.webmaster tr th{font-size:14px; height:32px; background:#EEE url('../images/grey.png') repeat-x left bottom; text-align:left; padding-left:10px; text-shadow:1px 1px 0 #FFF}
+.webmaster tr td{height:32px; border-bottom:1px solid #DDD; padding-left:10px}
+.webmaster tr td .input-item-submit{margin:0 8px; padding:0 5px}
+
+.list{width:100%; border:1px solid #DDD; border-bottom:none; margin-bottom:15px; box-shadow:1px 1px 0 #F8F8F8}
+.list tr th{font-size:14px; height:32px; background:#EEE url('../images/grey.png') repeat-x left bottom; text-align:left; padding-left:10px; text-shadow:1px 1px 0 #FFF}
+.list tr td{height:32px; border-bottom:1px solid #DDD; padding:8px 0 10px 10px; text-shadow:1px 1px 0 #FFF}
+.list tr td .status-0{color:#D60000}
+.list tr td .status-1{color:#2A9722}
+.list tr td .status-2{color:#999999}
+.list tr td .status-3{color:#FF0000}
+.list tr td .image img{margin-top:3px; cursor:pointer}
+.list tr td .image #attach{width:44px; height:32px; margin:-34px 0 0 2px; overflow:hidden; cursor:pointer; display:block; opacity:0; filter:alpha(opacity=0)}
+.list tr td .article{padding-left:10px}
+.list tr td .title{font-size:14px; font-weight:bold}
+.list tr td .title .image{margin:-2px 0 0 3px}
+.list tr td .author{color:#999; margin-top:5px}
+.list tr td .author a, .list tr td .tagitem .null{color:#666}
+.list tr td .author a:hover, .list tr td .tagitem .null:hover{color:#000}
+.list tr td .tagitem{margin-top:5px}
+.list tr td .tagitem em{ margin-right:5px; padding:1px 2px 1px 5px}
+.list tr td .tagitem em a{color:#999; font-family:SimSun; margin-left:3px}
+.list tr td .tagitem em a:hover{color:#D60000}
+.list tr td .tagitem .input-item-submit a{color:#F6F6F6}
+.list tr td .description{margin-right:10px}
+
+.form{width:100%; border:1px solid #DDD; border-bottom:none; background:#F9F9F9; margin-bottom:15px; box-shadow:1px 1px 0 #F8F8F8}
+.form tr th{font-size:14px; border-top:1px solid #FFF; border-bottom:1px solid #DDD; text-align:left; padding:12px 10px 10px 15px; vertical-align:top; text-shadow:1px 1px 0 #FFF}
+.form tr td{text-align:left; border-top:1px solid #FFF; border-bottom:1px solid #DDD; padding:12px 10px 10px 0; vertical-align:top}
+.form tr td .tips{color:#333; font-size:12px; margin-top:4px; text-shadow:1px 1px 0 #FFF}
+.form tr td .tips em{color:#D60000}
+.form tr td .input-item-text{width:380px}
+.form tr td .input-item-submit, .form tr td .input-item-button, .form tr td .ajax-load-wait{margin-bottom:5px}
+.form tr td .ajax-save-draft{color:#555; background:#FFF7B2; text-shadow:1px 1px 0 #FFF; padding:4px 8px; border-radius:2px}
+.form tr td .index{margin:8px 0 3px 0}
+.form tr td .index label{margin:0 10px 0 3px}
+.form tr td .option-multi-item .input-item-text{margin-top:10px}
+.form tr td #content{margin:0 1px 2px 0}
+
+.form tr td #attach{margin:15px 0 0 0}
+.form tr td #attach .upload-attach-wait, .form tr td #attach #upload-attach-tips{color:#666; margin-left:10px; text-shadow:1px 1px 0px #FFF}
+.form tr td #attach .error, .form tr td #attach .success{background:none; padding:0}
+.form tr td #upload-attach-butn{width:66px; cursor:pointer}
+.form tr td #attach-attach-file{width:66px; height:26px; margin-top: -30px; overflow:hidden; cursor:pointer; opacity:0; filter:alpha(opacity=0)}
+.form tr td #upload-attach-data li{padding:10px 0 6px 0}
+.form tr td #upload-attach-data .inserted a{color:#666}
+.form tr td #upload-attach-data .upload-item-1{background:none}
+.form tr td #upload-attach-data .imageview{width:66px; border-radius:2px}
+.form tr td #upload-attach-data .imageinfo{width:150px; margin-left:15px}
+.form tr td #upload-attach-data .imageinfo h5{font-size:12px; line-height:14px; margin-bottom:7px}
+
+#article #title{font-size:14px; width:450px}
+#article .dropselectbox{line-height:26px}
+#article .dropselectbox h4{height:26px}
+
+#tag li{width:136px; height:28px; line-height:28px; border-top:1px solid #FFF; border-left:1px solid #FFF; border-right:1px solid #CCC; border-bottom:1px solid #CCC; background:#F8F8F8; padding:0 5px; float:left}
+#tag li .fl em{color:#D60000; margin-left:5px}
+#tag li .fr a{color:#888}
+#tag li .fr a:hover{color:#333}
+
+.tag-stats-info, #tagmergeform p{margin-bottom:15px}
+
+.dialog-item-box .input-item-text{width:260px; margin:6px 0 0 0}
+.dialog-item-box #tips{margin-top:8px}
+.dialog-item-box #rela{height:0px; overflow:hidden;}
+.dialog-item-box #rela #dialog-rela-box{width:120px; border:1px solid #4271C9; background:#FFF; margin-top:-1px; border-radius:2px}
+.dialog-item-box #rela #dialog-rela-box li{height:24px; line-height:24px; border:1px solid #FFF; overflow:hidden; padding:0 5px}
+.dialog-item-box #rela #dialog-rela-box li:hover{background:#EEE; cursor:pointer}
+.dialog-item-box #rela #dialog-rela-box li h5{color:#4271C9; float:left}
+.dialog-item-box #rela #dialog-rela-box li p{color:#D60000; float:right}
+
+.imgareaselect-border1{background:url(../images/border-v.gif) repeat-y left top}
+.imgareaselect-border2{background:url(../images/border-h.gif) repeat-x left top}
+.imgareaselect-border3{background:url(../images/border-v.gif) repeat-y right top}
+.imgareaselect-border4{background:url(../images/border-h.gif) repeat-x left bottom}
+.imgareaselect-handle{background-color:#FFF; border:solid 1px #000; filter:alpha(opacity=50); opacity:0.5}
+.imgareaselect-outer{background-color:#000; filter:alpha(opacity=50); opacity: 0.5}
+.imgareaselect-border1, .imgareaselect-border2, .imgareaselect-border3, .imgareaselect-border4{filter:alpha(opacity=50); opacity:0.5}
+
+#page{height:24px; line-height:24px}
+#page .fl .input-item-button{margin:-3px 5px 0 5px}
+#page .fr a{color:#666; border:1px solid #DDD; text-shadow:1px 1px 0px #FFF; box-shadow:1px 1px 0px #F9F9F9; background:#EEE url('../images/grey.png') repeat-x left top; margin-left:5px; padding:3px 8px; border-radius:2px}
+#page .fr a:hover{color:#444; border:1px solid #888}
+#page .fr strong{color:#F6F6F6; font-weight:normal; border:1px solid #4C7BCF; background:#4271C9 url('../images/blue.png') repeat-x left top; text-shadow:1px 1px 0px #4C7BCF; box-shadow:1px 1px 0px #EEE; margin-left:5px; padding:3px 8px; border-radius:2px}
+#page .fr strong:hover{color:#FFF; border:1px solid #2E4F8C; cursor:default}
+#page .fr span{color:#666; border:1px solid #DDD; background:#F9F9F9 url('../images/grey.png') repeat-x left top; padding:3px 8px; border-radius:2px; text-shadow:1px 1px 0 #FFF; cursor:default}
+
+#index{text-align:right;margin:10px 10px 100px 0}
+#info{color:#888;font:8pt verdana;text-align:center;margin-top:15px;text-shadow:1px 1px 0px #FFF}
+#loading{border:1px solid #D60000;background:#FFFAAC;padding:4px 8px;text-shadow:1px 1px 0px #FFF;display:none}
+#sign{width:250px;border:2px solid #666;background:#FFF;margin:0 auto;padding:35px;border-radius:5px;box-shadow:0 0 20px #888}
+#sign h5{font-size:14pt;margin-bottom:20px;text-shadow:1px 1px 0px #EEE}
+#sign p{margin-top:6px}
+#sign p label{color:#666; font-weight:bold;width:100px;line-height:24px;display:block;margin-bottom:3px}
+#sign p .input-item-text{width:242px}
+#sign p .captcha{width:172px;margin-right:10px}
