@@ -97,11 +97,11 @@ $(function(){
 
     function openimg(no){
         $(".show_imgs").data("num",no);
-        $(".superbox1").animate({"margin-top":"-240px"},"slow")
+        $(".superbox1").animate({"margin-top":"-238px"},"slow")
         $(".superbox2").animate({"margin-top":"494px"},"slow")
         $(".wrapper").css("opacity","0.5")
         $(".superbox-show").show()
-        $(".superbox-show").animate({"top":"244px","height":"500px"},"slow");
+        $(".superbox-show").animate({"top":"242px","height":"500px"},"slow");
         setTimeout(function(){
             $(".show_block").fadeIn("slow");
             autoplay();
@@ -114,7 +114,7 @@ $(function(){
             $(".superbox1").animate({"margin-top":"0px"},"slow")
             $(".superbox2").animate({"margin-top":"0px"},"slow")
             $(".wrapper").css("opacity","1")
-            $(".superbox-show").animate({"height":"0px","top":"484px"},"slow");
+            $(".superbox-show").animate({"height":"0px","top":"482px"},"slow");
             $(".superbox-show").hide("slow")
         },300);
     }
