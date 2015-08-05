@@ -1,4 +1,9 @@
 <?php $this->load->view('admin_header'); ?>
+<style type="text/css">
+.progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+</style>
 <script type="text/javascript">
 $(function() {
     $('#posted').on('click', function() {
@@ -35,11 +40,25 @@ $(function() {
         });
     });
     $('#fengmian').on('change', function(){
+        var bar = $('#bar-f');
+        var percent = $('#percent-f');
         $('#exampleform').ajaxSubmit({
             url: '/upload/exampleimage',
             dataType: 'json',
-            beforeSubmit: function(){},
+            beforeSubmit: function(){
+                var percentVal = '0%';
+                bar.width(percentVal)
+                percent.html(percentVal);
+            },
+            uploadProgress: function(event, position, total, percentComplete) {
+                var percentVal = percentComplete + '%';
+                bar.width(percentVal)
+                percent.html(percentVal);
+            },
             success: function(response, status, xhr, form){
+                var percentVal = '100%';
+                bar.width(percentVal)
+                percent.html(percentVal);
                 var str = '<img src="' + response.data.filepath + '" width="100px;">';
                     str += '<input type="hidden" name="fengmian" value="' + response.data.fullpath + '"/>';
                 $('#fengmian-image').html(str);
@@ -47,11 +66,25 @@ $(function() {
         });
     });
     $('#images').on('change', function(){
+        var bar = $('#bar-i');
+        var percent = $('#percent-i');
         $('#exampleform').ajaxSubmit({
             url: '/upload/exampleimage',
             dataType: 'json',
-            beforeSubmit: function(){},
+            beforeSubmit: function(){
+                var percentVal = '0%';
+                bar.width(percentVal)
+                percent.html(percentVal);
+            },
+            uploadProgress: function(event, position, total, percentComplete) {
+                var percentVal = percentComplete + '%';
+                bar.width(percentVal)
+                percent.html(percentVal);
+            },
             success: function(response, status, xhr, form){
+                var percentVal = '100%';
+                bar.width(percentVal)
+                percent.html(percentVal);
                 var num = $('#anli-image').find('li').length;
                 var str = '<li style="float:left;margin-right:5px;" class="anli-' + num + '">';
                     str += '<img src="' + response.data.filepath + '" width="100px;">';
@@ -136,6 +169,15 @@ $(function() {
                 </ul>
             </td>
         </tr>
+         <tr>
+            <th></th>
+            <td>
+                <div class="progress">
+                    <div class="bar" id="bar-f"></div >
+                    <div class="percent" id="percent-f">0%</div >
+                </div>
+            </td>
+        </tr>
         <tr>
             <th>案例图片</th>
             <td>
@@ -151,6 +193,15 @@ $(function() {
                         <?php endforeach;?>
                     <?php endif;?>
                 </ul>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <div class="progress">
+                    <div class="bar" id="bar-i"></div>
+                    <div class="percent" id="percent-i">0%</div>
+                </div>
             </td>
         </tr>
         <tr>

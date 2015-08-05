@@ -362,6 +362,18 @@ function deleteImage(ele, image) {
     });
 }
 
+function deleteAnLi(ele, image) {
+    $(ele).html('删除中...');
+    $.getJSON( $CONFIG['adminurl'] + 'example/deleteImage', { image: image }, function(json) {
+        if( json.code === 'success' ) {
+            $(ele).closest('li').remove();
+        } else {
+            art.dialog.tips('删除失败，请重试', 3);
+        }
+        $(ele).html('删除');
+    });
+}
+
 function deleteLinkById(ele, lid) {
     art.dialog.confirm('提示：真的要将该链接彻底删除吗？', function () {
         $(ele).html('删除中...');

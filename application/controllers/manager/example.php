@@ -9,7 +9,7 @@ class Example extends A {
 
     public function index($start){
         $this->load->library('pagination');
-        $config['base_url']     = admin_base_url('example/' . $data['type']);
+        $config['base_url']     = admin_base_url('example/index');
         $config['total_rows']   = $this->example_model->get_rows();
         $config['per_page']     = $this->_prepage;
         $config['num_links']    = 5;
