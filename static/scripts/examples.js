@@ -88,7 +88,7 @@ $(function(){
 
     function showmark(){
         $('.superbox-list').hover(function () {
-            $(this).children().children(".case_mark").animate({"opacity":"0.9"},"slow");
+            $(this).children().children(".case_mark").animate({"opacity":"1.0"},"slow");
         },function () {
             $(this).children().children(".case_mark").stop(true).hover();
             $(this).children().children(".case_mark").animate({"opacity":"0"},"slow");
