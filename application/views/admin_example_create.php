@@ -49,6 +49,7 @@ $(function() {
                 var percentVal = '0%';
                 bar.width(percentVal)
                 percent.html(percentVal);
+                $('#fengmian').attr('disabled', true);
             },
             uploadProgress: function(event, position, total, percentComplete) {
                 var percentVal = percentComplete + '%';
@@ -56,6 +57,7 @@ $(function() {
                 percent.html(percentVal);
             },
             success: function(response, status, xhr, form){
+                $('#fengmian').attr('disabled', false);
                 var percentVal = '100%';
                 bar.width(percentVal)
                 percent.html(percentVal);
@@ -75,6 +77,7 @@ $(function() {
                 var percentVal = '0%';
                 bar.width(percentVal)
                 percent.html(percentVal);
+                $('#images').attr('disabled', true);
             },
             uploadProgress: function(event, position, total, percentComplete) {
                 var percentVal = percentComplete + '%';
@@ -82,6 +85,7 @@ $(function() {
                 percent.html(percentVal);
             },
             success: function(response, status, xhr, form){
+                $('#images').attr('disabled', false);
                 var percentVal = '100%';
                 bar.width(percentVal)
                 percent.html(percentVal);
@@ -149,7 +153,7 @@ $(function() {
         <tr>
             <th>封面图片</th>
             <td>
-                <input type="file" id="fengmian" name="attach" />
+                <input type="file" id="fengmian" name="attach"/>
                 <ul id="fengmian-image"></ul>
             </td>
         </tr>
