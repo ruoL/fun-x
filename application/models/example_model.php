@@ -22,9 +22,10 @@ class Example_model extends CI_Model {
         return $this->db->get('example')->num_rows();
     }
 
-    public function get_list($start = 0, $offset = 0, $where = null) {
+    public function get_list($start = 0, $offset = 0, $where = null, $order = 'id asc') {
         if($where) $this->db->where($where);
         if($start || $offset) $this->db->limit($offset, $start);
+        $this->db->order_by($order);
         $res = $this->db->get('example')->result();
         if ( $res ) {
             foreach ( $res as $value ) {
