@@ -11,13 +11,15 @@ img {vertical-align:bottom;}
 .superbox_list2{}
 .wrapper_content{height: 100%;}
 .superbox ul{width: 100%;height: 100%;padding: 0;margin: 0; }
-.case_mark{position: absolute;left: 0px;top: 0px; width: 191px;height: 191px; background: #EF4C4C;color: #fff; z-index: 2;opacity: 0;}
+.case_mark{position: absolute;left: 0px;top: 0px; width: 191px;height: 191px; background: #ff6666;color: #fff; z-index: 2;opacity: 0;}
 .case_mark span{display: block;width: 100%;text-align: center;line-height: 30px;padding: 56px 0 0 0 ;}
+.case_mark span:nth-child(1){font-size: 18px;}
 .case_mark span:nth-child(2){font-size: 12px;padding: 0;}
 .superbox-list {float:left;width:191px;height:191px;position: relative;margin-right: 1px;margin-bottom: 1px;}
 .superbox-img {cursor:pointer;height: 191px;width: 191px;}
-.superbox-show {position:absolute;left:0;top: 484px;width:100%;float:left;border:1px solid #c7c7c7;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;height: 0px;background: #5d5d5d;z-index: 5;display: none;box-shadow: 0px 10px 10px #525252 inset;}
+.superbox-show {position:absolute;left:0;top: 484px;width:100%;float:left;border:1px solid #c7c7c7;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;height: 0px;background: #2b2b2b;z-index: 5;display: none;box-shadow: 0px 10px 10px #1d1c1c inset;}
 .show_block{width: 960px;height: 100%;margin:0 auto;display:none;position: relative;}
+.loading{width: 30px;height: 30px;margin: 200px auto;}
 .con{position: absolute;top: 45%;width: 60px;height: 60px;z-index: 2;cursor: pointer;border-radius: 30px;background: #464646;}
 .con:hover{background: #6f6f6f;}
 .con a{display:block;width:36px;height:36px;margin: 0 auto;margin-top: 12px;}
@@ -35,14 +37,14 @@ img {vertical-align:bottom;}
 .nextpage a{background: url(../images/sorrow_right.png);background-size: 100% 100%;}
 
 .show_left{width:80%;height: 100%;float: left;position: relative;}
-.show_imgs{width: 97%;height: 90%;overflow: hidden;margin: 25px 20px 25px 0;box-shadow: 0px 0px 2px 4px #525252;}
+.show_imgs{width: 97%;height: 90%;overflow: hidden;margin: 25px 20px 25px 0;box-shadow: 0px 0px 2px 4px #1d1c1c;}
 .show_imgs ul{width: 500%;height: 100%;padding: 0;margin: 0;}
 .show_imgs ul li{width: 20%;height: 100%;float: left;}
 .show_imgs ul li img{width: 100%;height: 100%;}
 .superbox-current-img {position: absolute;left: 0;top: 0;width:100%;height: 100%;z-index: 1;}
 .superbox-img:hover {opacity:0.8;}
 .sorrow{position: absolute;top: 48%;width: 30px;height: 30px;z-index: 2;background: #fff;cursor: pointer;}
-.sorrow:hover{background: #464646;}
+.sorrow:hover{background: #2b2b2b;}
 .sorrow_left:hover a{background: url(../images/sorrow_l_act.png);background-size: 100% 100%;}
 .sorrow_right:hover a{background: url(../images/sorrow_r_act.png);background-size: 100% 100%;}
 .sorrow a{display:block;width:12px;height:19px;margin:5.5px 9px;}

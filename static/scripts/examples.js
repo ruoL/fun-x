@@ -102,10 +102,6 @@ $(function(){
         $(".wrapper").css("opacity","0.5")
         $(".superbox-show").show()
         $(".superbox-show").animate({"top":"242px","height":"500px"},"slow");
-        setTimeout(function(){
-            $(".show_block").fadeIn("slow");
-            autoplay();
-        },500);
     }
     function closeimg(){
         clearInterval(window.t)
@@ -159,7 +155,7 @@ $(function(){
     function autoplay(){
         window.t = setInterval(function(){
             next();
-        },2000);
+        },4000);
     }
     function nextpage(){
         var no = $(".show_imgs").data("num");
@@ -191,11 +187,18 @@ $(function(){
         setpage(num,window.page)
     }
     function setpage(no,page){
+        $(".loading").show()
+        $(".show_block").hide()
         $.post("/product/one",{"id":no},function(response) {
             if (response.code === "success") {
                 var imgData = response['data']['anli'];
                 var imgLen = imgData.length;
                 var str = "<li><img src=''/></li>";
+                PreLoadImg(imgData, function () {
+                    $(".loading").hide()
+                    $(".show_block").fadeIn("slow");
+                    autoplay();
+                });
                 $(".show_imgs ul").html('')
                 for (var i = 1; i <= imgLen; i++) {
                     $(".show_imgs ul").append(str);
@@ -220,5 +223,24 @@ $(function(){
                 console.log("error")
             }
         }, 'json');
+    }
+    function PreLoadImg(sources, callback) {
+        var count = 0,
+            images = {},
+            imgNum = 0;
+        for (src in sources) {
+            imgNum++;
+        }
+        for (src in sources) {
+            images[src] = new Image();
+            images[src].onload = function () {
+                if (++count >= imgNum) {
+                    setTimeout(function () {
+                        callback(images);
+                    }, 500);
+                }
+            }
+            images[src].src = "/"+sources[src];
+        }
     }
 });

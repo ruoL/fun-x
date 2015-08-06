@@ -1,7 +1,10 @@
 <?php $this->load->view('site_header'); ?>
 <div class="examples_page">
 	<!-- 在中间放置预览框 -->
-	<div class="superbox-show">	
+	<div class="superbox-show">
+		<div class="loading">
+			<img src="<?php echo base_url('static/images/loading.gif');?>">
+		</div>
 		<div class="show_block">
 			<div class="con pre">
 				<a href="javascript:void(0);"></a>
