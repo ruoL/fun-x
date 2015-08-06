@@ -3,7 +3,7 @@
 	<!-- 在中间放置预览框 -->
 	<div class="superbox-show">
 		<div class="loading">
-			<img src="<?php echo base_url('static/images/loading.gif');?>">
+			<img src="<?php echo base_url('static/images/ajax-loader.gif');?>">
 		</div>
 		<div class="show_block">
 			<div class="con pre">

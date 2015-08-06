@@ -19,7 +19,7 @@ img {vertical-align:bottom;}
 .superbox-img {cursor:pointer;height: 191px;width: 191px;}
 .superbox-show {position:absolute;left:0;top: 484px;width:100%;float:left;border:1px solid #c7c7c7;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;height: 0px;background: #2b2b2b;z-index: 5;display: none;box-shadow: 0px 10px 10px #1d1c1c inset;}
 .show_block{width: 960px;height: 100%;margin:0 auto;display:none;position: relative;}
-.loading{width: 30px;height: 30px;margin: 200px auto;}
+.loading{width: 30px;height: 30px;margin: 200px auto;background:transparent}
 .con{position: absolute;top: 45%;width: 60px;height: 60px;z-index: 2;cursor: pointer;border-radius: 30px;background: #464646;}
 .con:hover{background: #6f6f6f;}
 .con a{display:block;width:36px;height:36px;margin: 0 auto;margin-top: 12px;}
