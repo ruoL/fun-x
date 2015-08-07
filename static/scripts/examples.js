@@ -158,6 +158,7 @@ $(function(){
         },4000);
     }
     function nextpage(){
+        clearInterval(window.t)
         var no = $(".show_imgs").data("num");
         no = no+1;
         if(no > length){
@@ -166,6 +167,7 @@ $(function(){
         example(no);
     }
     function prepage(){
+        clearInterval(window.t)
         var no = $(".show_imgs").data("num");
         no = no-1;
         if(no <= 0){
