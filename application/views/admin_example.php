@@ -16,8 +16,8 @@
                 <td><?php echo $value->name;?></td>
                 <td><?php echo implode(',', $value->tag);?></td>
                 <td><?php echo implode(',', $value->color);?></td>
-                <td><?php echo $value->sort;?></td>
-                <td>
+                <td><input class="sort" style="width:40px;" data-id="<?php echo $value->id;?>" type="text" value="<?php echo $value->sort;?>"/></td>
+                <td align="center">
                     <a href="<?php echo admin_site_url('example/update/'.$value->id); ?>">编辑</a>
                     <a href="<?php echo admin_site_url('example/delete/'.$value->id); ?>" class="btn-delete">删除</a>
                 </td>
@@ -37,8 +37,9 @@
         </p>
     </div>
     <?php endif; ?>
-    </form>
 </div>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('static/css/ui-dialog.css');?>">
+<script type="text/javascript" src="<?php echo base_url('static/scripts/dialog-min.js');?>"></script>
 <script type="text/javascript">
     $(function() {
         $('.bs-docs-sidenav').children('li').eq(7).addClass('active');
@@ -49,6 +50,33 @@
                 return false;
             };
         })
+
+        $('.sort').on('blur', function(){
+            $id     = $(this).data('id');
+            $sort   = $(this).val();
+            if ( $sort == '' ) $sort = 0;
+            $.post($CONFIG['adminurl'] + 'example/updateSort', {id: $id, sort: $sort}, function( data ){
+                if ( data.code == 'success' ) {
+                    var d = dialog({
+                        title: '提示消息',
+                        content: data.info
+                    });
+                    d.show();
+                    setTimeout(function () {
+                        d.close().remove();
+                    }, 2000);
+                } else {
+                    var d = dialog({
+                        title: '提示消息',
+                        content: data.info
+                    });
+                    d.show();
+                    setTimeout(function () {
+                        d.close().remove();
+                    }, 2000);
+                }
+            }, 'json');
+        });
     });
 </script>
 <?php $this->load->view('admin_menu'); ?>

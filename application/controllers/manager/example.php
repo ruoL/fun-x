@@ -32,8 +32,6 @@ class Example extends A {
 
     public function createAction()
     {
-
-        var_dump($_POST);exit;
         $name       = $this->input->post('name');
         $sort       = $this->input->post('sort');
         $tag        = $this->input->post('tag');
@@ -164,6 +162,21 @@ class Example extends A {
             }
             JSON('error', '删除失败');
         }
-        JSON('error', '文件不存在');
+        JSON('success', '删除成功');
+    }
+
+    public function updateSort()
+    {
+        $id     = $this->input->post('id');
+        $sort   = $this->input->post('sort');
+        $exam   = $this->example_model->get_info(['id'=>$id]);
+        if ( $exam ) {
+            $this->db->where('id', $id)->update('big_example', ['sort'=>$sort]);
+            if ( $this->db->affected_rows() ) {
+                JSON('success', '修改成功');
+            }
+            JSON('error', '修改失败或者没有修改');
+        }
+        JSON('error', '修改失败');
     }
 }
