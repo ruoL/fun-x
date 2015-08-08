@@ -49,6 +49,7 @@ function NextThis(ele)
 
 function PrevThis(ele)
 {
+
     var $par    = $(ele).parent().parent();
     var $ul     = $('#anli-image');
     var $allli  = $('#anli-image li');
