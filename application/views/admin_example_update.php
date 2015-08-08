@@ -93,7 +93,7 @@ $(function() {
                 var str = '<li style="float:left;margin-right:5px;" class="anli-' + num + '">';
                     str += '<img src="' + response.data.filepath + '" width="100px;">';
                     str += '<input type="hidden" name="anli[]" value="' + response.data.fullpath + '"/>';
-                    str += '<p><a href="javascript:;" onclick="deleteAnLi(this, \''+response.data.fullpath+'\');">删除</a></p>';
+                    str += '<p><a href="javascript:;" onclick="PrevThis(this)";>前移</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="NextThis(this)";>后移</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="deleteAnLi(this, \''+response.data.fullpath+'\');">删除</a></p>';
                     str += '</li>';
                 $('#anli-image').append(str);
             }
@@ -124,6 +124,12 @@ $(function() {
         <td widht="*" id="article">
             <input type="text" id="name" name="name" class="form-group-sm form-control" maxlength="10" style="margin:0 7px 3px 0;width: 500px;" value="<?php echo $example->name;?>" placeholder="最多10个字" />
             </td>
+        </tr>
+        <tr>
+        <th>案例序号</th>
+        <td>
+            <input type="text" id="sort" name="sort" class="form-group-sm form-control" maxlength="10" style="margin:0 7px 3px 0;width: 500px;" value="<?php echo $example->sort;?>" placeholder="数字越小排序越靠前" />
+        </td>
         </tr>
         <tr>
             <th>分类标签</th>
@@ -192,7 +198,7 @@ $(function() {
                             <li style="float:left;margin-right:5px;">
                                 <img src="<?php echo base_url($value);?>" width="100px;">
                                 <input type="hidden" name="anli[]" value="<?php echo $value;?>"/>
-                                <p><a href="javascript:;" onclick="deleteAnLi(this, '<?php echo $value;?>');">删除</a></p>
+                                <p><a href="javascript:;" onclick="PrevThis(this)";>前移</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="NextThis(this)";>后移</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="deleteAnLi(this, '<?php echo $value;?>');">删除</a></p>
                             </li>
                         <?php endforeach;?>
                     <?php endif;?>

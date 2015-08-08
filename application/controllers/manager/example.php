@@ -32,7 +32,10 @@ class Example extends A {
 
     public function createAction()
     {
+
+        var_dump($_POST);exit;
         $name       = $this->input->post('name');
+        $sort       = $this->input->post('sort');
         $tag        = $this->input->post('tag');
         $zhaiyao    = $this->input->post('zhaiyao');
         $jianjie    = $this->input->post('jianjie');
@@ -62,6 +65,7 @@ class Example extends A {
         }
 
         $data['name']       = $name;
+        $data['sort']       = $sort ? intval($sort) : 0;
         $data['tag']        = $tag;
         $data['zhaiyao']    = $zhaiyao;
         $data['jianjie']    = $jianjie;
@@ -88,6 +92,7 @@ class Example extends A {
     {
         $id         = $this->input->post('id');
         $name       = $this->input->post('name');
+        $sort       = $this->input->post('sort');
         $tag        = $this->input->post('tag');
         $zhaiyao    = $this->input->post('zhaiyao');
         $jianjie    = $this->input->post('jianjie');
@@ -119,6 +124,7 @@ class Example extends A {
         }
 
         $data['name']       = $name;
+        $data['sort']       = $sort ? intval($sort) : 0;
         $data['tag']        = $tag;
         $data['zhaiyao']    = $zhaiyao;
         $data['jianjie']    = $jianjie;

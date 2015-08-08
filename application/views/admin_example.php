@@ -2,10 +2,11 @@
 <div class="col-sm-10 fx-main">
     <table border="0" cellpadding="0" cellspacing="0" class="list table table-striped">
         <tr>
-            <th width="10%">ID</th>
+            <th width="5%">ID</th>
             <th width="20%">案例名称</th>
             <th width="30%">案例标签</th>
             <th width="30%">案例色值</th>
+            <th width="5%">案例序号</th>
             <th width="10%" class="article-center">操作</th>
         </tr>
         <?php if($list) : ?>
@@ -15,6 +16,7 @@
                 <td><?php echo $value->name;?></td>
                 <td><?php echo implode(',', $value->tag);?></td>
                 <td><?php echo implode(',', $value->color);?></td>
+                <td><?php echo $value->sort;?></td>
                 <td>
                     <a href="<?php echo admin_site_url('example/update/'.$value->id); ?>">编辑</a>
                     <a href="<?php echo admin_site_url('example/delete/'.$value->id); ?>" class="btn-delete">删除</a>

@@ -93,12 +93,13 @@ $(function() {
                 var str = '<li style="float:left;margin-right:5px;" class="anli-' + num + '">';
                     str += '<img src="' + response.data.filepath + '" width="100px;">';
                     str += '<input type="hidden" name="anli[]" value="' + response.data.fullpath + '"/>';
-                    str += '<p><a href="javascript:;" onclick="deleteAnLi(this, \''+response.data.fullpath+'\');">删除</a></p>';
+                    str += '<p><a href="javascript:;" onclick="PrevThis(this)";>前移</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="NextThis(this)";>后移</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="deleteAnLi(this, \''+response.data.fullpath+'\');">删除</a></p>';
                     str += '</li>';
                 $('#anli-image').append(str);
             }
         });
     });
+
     $('#sexi').on('click', function(){
         var td = $('#sexi').closest('td');
         var num = td.find('input').length;
@@ -123,6 +124,12 @@ $(function() {
         <td widht="*" id="article">
             <input type="text" id="name" name="name" class="form-group-sm form-control" maxlength="10" style="margin:0 7px 3px 0;width: 500px;" placeholder="最多10个字" />
             </td>
+        </tr>
+        <tr>
+        <th>案例序号</th>
+        <td>
+            <input type="text" id="sort" name="sort" class="form-group-sm form-control" maxlength="10" style="margin:0 7px 3px 0;width: 500px;" placeholder="从0开始，数字越小排序越靠前" />
+        </td>
         </tr>
         <tr>
             <th>分类标签</th>

@@ -34,6 +34,32 @@ function deleteTagById(ele, tid) {
     });
 }
 
+function NextThis(ele)
+{
+    var $par    = $(ele).parent().parent();
+    var $ul     = $('#anli-image');
+    var $allli  = $('#anli-image li');
+    var $index  = $allli.index($par);
+    var $len    = $ul.length;
+    if ( $index > $len - 1 ) {
+        var $next = $par.next();
+        $next.after($par);
+    }
+}
+
+function PrevThis(ele)
+{
+    var $par    = $(ele).parent().parent();
+    var $ul     = $('#anli-image');
+    var $allli  = $('#anli-image li');
+    var $index  = $allli.index($par);
+    var $len    = $ul.length;
+    if ( $index > 0 ) {
+        var $prev = $par.prev();
+        $prev.before($par);
+    }
+}
+
 function mergeTagAction(ele) {
     $(ele).closest('form').ajaxSubmit({
         dataType: 'json',
