@@ -64,14 +64,14 @@
 					<h6>景鑫,证明了处女座也会有高人气，在工作中发挥处女座的特点，谨慎、踏实，除了HR之外负责公司日常行政管理及财务管理。</h6>
 				</a></li>
 				<li><a href="javascript:void(0)">
-					<img src="http://fun-x.b0.upaiyun.com/static/img/jiaru.png">
+					<img src="http://fun-x.b0.upaiyun.com/static/img/leiminxiang.png">
 					<h1>Elena</h1>
 					<h4>PHP开发工程师</h4>
 					<h6>雷敏香,熟悉php语言，c语言编程，擅长逻辑思维，有超强的好奇心，喜欢一切简单美好的事物。最有成就感的事情就是看到自己写的代码实现一些有趣的功能。永不满足，对各种新技术有着强烈的学习欲望。
 					</h6>
 				</a></li>
 				<li><a href="javascript:void(0)">
-					<img src="http://fun-x.b0.upaiyun.com/static/img/jiaru.png">
+					<img src="http://fun-x.b0.upaiyun.com/static/img/zhangtianqi.png">
 					<h1>ZHANG TIAN QI</h1>
 					<h4>GO语言工程师</h4>
 					<h6 style="text-align:Center;">张天其</h6>
