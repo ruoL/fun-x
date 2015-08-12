@@ -27,6 +27,7 @@
 			<div class="header-wrapper-l">
 				<h1>梵响互动</h1><h2></h2>
 			</div>
+			<div class="phone-num-b"></div>
 			<ul class="header-wrapper-r">
 				<li class="nav_list1 <?php if($this->uri->segment(1,0)==='index'||$this->uri->segment(1,0)===0){echo "curr";}?>"><a href="<?php echo site_url('index'); ?>">首页</a></li>
 				<li class="nav_list3 <?php if($this->uri->segment(1,0)==='product'){echo "curr";}?>"><a href="<?php echo site_url('product'); ?>">案例</a></li>
@@ -39,6 +40,7 @@
 	<div class="header-nav">
 		<div class="nav w960">
 		<div class="logo"><a href="<?php echo site_url('index'); ?>"></a></div>
+		<div class="phone-num"></div>
 		<ul class="nav_list">
 				<li class="nav_list1 <?php if($this->uri->segment(1,0)==='index'||$this->uri->segment(1,0)===0){echo "curr";}?>"><a href="<?php echo site_url('index'); ?>">首页</a><em class="fa fa-caret-up"></em></li>
 				<li class="nav_list3 <?php if($this->uri->segment(1,0)==='product'){echo "curr";}?>"><a href="<?php echo site_url('product'); ?>">案例</a><em class="fa fa-caret-up"></em></li>

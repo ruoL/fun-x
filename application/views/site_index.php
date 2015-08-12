@@ -35,6 +35,7 @@ $("#video_url").attr("src",' ');
     <div class="header-nav header-cover">
         <div class="nav-main">
             <div class="logo"><a href="http://www.fun-x.cn/index/"></a></div>
+            <div class="phone-num"></div>
             <ul class="nav_list">
                 <li class="nav_list1 curr"><a href="http://www.fun-x.cn/index/">首页</a><em class="fa fa-caret-up"></em></li>
                 <li class="nav_list3 "><a href="<?php echo site_url('product');?>">案例</a><em class="fa fa-caret-up"></em></li>
@@ -47,6 +48,7 @@ $("#video_url").attr("src",' ');
     <div class="header-nav header-red-cover">
         <div class="nav-main">
             <div class="logo"><a href="http://www.fun-x.cn/index/"></a></div>
+            <div class="phone-num"></div>
             <ul class="nav_list">
                 <li class="nav_list1 curr"><a href="http://www.fun-x.cn/index/">首页</a><em class="fa fa-caret-up"></em></li>
                 <li class="nav_list3 "><a href="<?php echo site_url('product');?>">案例</a><em class="fa fa-caret-up"></em></li>
@@ -61,6 +63,7 @@ $("#video_url").attr("src",' ');
             <div class="header-wrapper">
                 <h1>梵响互动</h1><h2></h2>
             </div>
+            <div class="phone-num-b"></div>
             <ul class="nav_list">
                 <li class="nav_list1 curr"><a href="http://www.fun-x.cn/index/">首页</a><em class="fa fa-caret-up"></em></li>
                 <li class="nav_list3 "><a href="<?php echo site_url('product');?>">案例</a><em class="fa fa-caret-up"></em></li>
@@ -75,6 +78,7 @@ $("#video_url").attr("src",' ');
             <div class="header-wrapper">
                 <h1>梵响互动</h1><h2></h2>
             </div>
+            <div class="phone-num"></div>
             <ul class="nav_list">
                 <li class="nav_list1 curr"><a href="http://www.fun-x.cn/index/">首页</a><em class="fa fa-caret-up"></em></li>
                 <li class="nav_list3 "><a href="<?php echo site_url('product');?>">案例</a><em class="fa fa-caret-up"></em></li>
