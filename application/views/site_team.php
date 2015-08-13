@@ -44,17 +44,17 @@
 					<h4>前端工程师</h4>
 					<h6>张婷,熟悉HTML语言在各种浏览器下兼容,最开心的事情就是不用做IE8以下兼容。思维活跃，喜爱探索新鲜事物，不断学习，love一切美的东西。</h6>
 				</a></li>
-				<li><a href="javascript:void(0)">
+				<!-- <li><a href="javascript:void(0)">
 									<img src="http://fun-x.b0.upaiyun.com/static/img/jiaru.png">
 					<h1>冯特罗</h1>
 					<h4>APP开发工程师</h4>
-					<h6>杨晓龙,。</h6>
-				</a></li>
+					<h6></h6>
+				</a></li> -->
 				<li><a href="javascript:void(0)">
-										<img src="http://fun-x.b0.upaiyun.com/static/img/wangchuanjian.png">
-					<h1>CJ·Wang</h1>
-					<h4>全栈工程师</h4>
-					<h6>王传健,改变世界是我的信条。着迷于敲击代码的声音，让我想起那天夕阳下的奔跑，那是我逝去的青春。</h6>
+										<img src="http://fun-x.b0.upaiyun.com/static/img/yanhongyan.png">
+					<h1>Yehoney</h1>
+					<h4>UI设计师</h4>
+					<h6>严红雁，视觉-产品设计，熟习平面设计软件（PS,CDR,AI,ID)，产品设计三维建模软件（Rhino)。热爱设计，热爱生活，喜欢拍照，旅行，体验不一样的生活乐趣，珍惜生活的细枝末节。</h6>
 
 				</a></li>
 				<li class="t-m"><a href="javascript:void(0)">
@@ -72,9 +72,11 @@
 				</a></li>
 				<li><a href="javascript:void(0)">
 					<img src="http://fun-x.b0.upaiyun.com/static/img/zhangtianqi.png">
-					<h1>ZHANG TIAN QI</h1>
-					<h4>GO语言工程师</h4>
-					<h6 style="text-align:Center;">张天其</h6>
+					<h1>ruoLi</h1>
+					<h4>PHP开发工程师</h4>
+					<h6>
+						张天其，熟悉C/C++，PHP，Linux。喜欢键盘敲击的感觉，写代码是一件让我很快乐的事情！热爱学习，坚信自己也能成为大神！
+					</h6>
 				</a></li>
 				<li><a href="javascript:void(0)">
 										<img src="http://fun-x.b0.upaiyun.com/static/img/jiaru.png">
